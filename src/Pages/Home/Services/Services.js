@@ -9,7 +9,7 @@ const Services = () => {
         .then(data => setServices(data))
     } , [])
     return (
-        <div className='mt-32'>
+        <div className='mt-32 mb-32 grid grid-cols-1'>
             <div className='text-center'>
                 <p className='text-red-500 font-bold'>Services</p>
                 <h2 className='text-5xl font-semibold mt-3 mb-3'>Our Services Area</h2>
@@ -23,6 +23,9 @@ const Services = () => {
                         service={service}
                     ></ServicesItem>)
                 }
+            </div>
+            <div className='text-center'>
+                <button className="btn btn-outline btn-error">More Services</button>
             </div>
         </div>
     );

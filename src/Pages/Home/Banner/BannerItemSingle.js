@@ -5,7 +5,7 @@ const BannerItemSingle = ({slide}) => {
     console.log(slide);
     return (
 
-        <div id={`slide${id}`} className="carousel-item relative w-full">
+        <div id={`slide${id}`} className="carousel-item relative w-full mx-auto">
             <div className='w-full img-carusel '>
                 <img src={image} className="w-full max-h-[500px] object-cover rounded-lg" alt='' />
             </div>

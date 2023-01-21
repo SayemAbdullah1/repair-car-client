@@ -6,12 +6,7 @@ const Header = () => {
     const navItem = 
     <>
             <li><Link className='mx-2' to='/'>Home</Link></li>
-            <li><Link className='mx-2' to='/'>Service</Link></li>
-            <li><Link className='mx-2' to='/'>Blog</Link></li>
-            <li><Link className='mx-2' to='/'>Contact</Link></li>
-    
-    
-    
+            <li><Link className='mx-2' to='/login'>Login</Link></li>
     
     </>
     return (
