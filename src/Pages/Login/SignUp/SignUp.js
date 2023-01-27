@@ -4,7 +4,7 @@ import Login from '../../../assets/images/login/login.svg'
 import { authContext } from '../../../context/AuthProvider/AuthProvider';
 
 const SignUp = () => {
-    const { createUser } = useContext(authContext)
+    const { createUser, googleLogin } = useContext(authContext)
     const handleSignUp = event =>{
         event.preventDefault()
     
@@ -14,6 +14,16 @@ const SignUp = () => {
         console.log(email, password);
 
         createUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+
+            })
+            .catch(err => console.error(err))
+    }
+
+    const handleGooglelogin = ()=>{
+        googleLogin()
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -58,6 +68,7 @@ const SignUp = () => {
 
                         </div>
                         <span>Already have an account? <Link to='/login' className='text-orange-500 font-bold'>Login</Link></span>
+                        <button onClick={handleGooglelogin} className='btn btn-yellow'>GOOGLE</button>
                     </form>
                 </div>
             </div>
