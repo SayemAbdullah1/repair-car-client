@@ -38,13 +38,13 @@ const OrderRow = ({ order, handleDelete }) => {
                     </div>
                 </td>
                 <td>
-                    {serviceName}
+                <span className='font-bold'> {serviceName}</span>
                     <br />
-                    <span className="badge badge-ghost badge-sm">{price}</span>
+                <span className="badge badge-ghost badge-sm">Price: <span className='font-bold'> ${price}</span></span>
                 </td>
                 <td>{email}</td>
                 <th>
-                    <button onClick={()=>handleDelete(_id)} className="btn btn-ghost btn-xs">Delete</button>
+                    <button onClick={()=>handleDelete(_id)} className="btn btn-error btn-sm">Delete</button>
                 </th>
             </tr>
     );

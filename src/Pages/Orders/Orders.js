@@ -34,7 +34,8 @@ const Orders = () => {
     }
 
     return (
-        <div className="overflow-x-auto w-full">
+        <div className="overflow-x-auto w-full h-screen">
+            <div className="text-4xl font-bold m-6 text-center border-b-2 border-b-blue-400 pb-1">My orders</div>
             <table className="table w-full">
                 
                 <thead>
