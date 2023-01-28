@@ -12,7 +12,7 @@ const ServicesItem = ({service}) => {
                     <p className='text-red-500 font-bold mb-4 ml-2'>Price: ${price}</p>
                 </div>
                 <div className='mr-2 mt-6'>
-                    <Link to={`/checkout/${_id}`}><button className="btn btn-active btn-primary btn-sm ">Buy now</button></Link>
+                    <Link to={`/checkout/${_id}`}><button className="btn btn-active btn-primary btn-sm ">Checkout</button></Link>
                 </div>
             </div>
 
